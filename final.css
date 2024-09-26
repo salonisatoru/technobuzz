@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
-    background-color: #000;
+    background-color: white;
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
 }
+
 a{
     text-decoration: none;
+}
+.header1{
+    background: none;
+}
+.navbar{
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   background-color: whitesmoke
 }
 header{
     width: 1140px;
@@ -17,7 +28,7 @@ header{
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 100;
+    z-index: 50;
 }
 header a{
     color: #eee;
@@ -71,24 +82,74 @@ header a{
     color: #f62681
     ;
 }
-.carousel .list .item .buttons{
-    display: grid;
-    grid-template-columns: repeat(2, 130px);
-    grid-template-rows: 40px;
-    gap: 5px;
-    margin-top: 20px;
+.carousel .list .item .btn{
+    border: none;
+    display: flex;
+    gap: 20px;
+
 }
-.carousel .list .item .buttons button{
+.carousel .list .item .btn .seebtn{
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    font-size: 20px;
+
+    border-radius: 10px
 }
-.carousel .list .item .buttons button:nth-child(2){
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
+.carousel .list .item .btn .bookbtn{
+    background-color: blue;
+    width: 220px;
+    height: 50px;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px
+}
+.carousel .list .item .btn .bookbtn{
+    transition: transform 0.3s ease-in-out;
+}
+.carousel .list .item .btn .bookbtn:hover{
+    transform: scale(1.1);
+}
+
+/*form*/
+/* Form styling */
+.form-container {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: #f1f1f1;
+    z-index: 9;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"], #closeformBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+  }
+.row g-3{
+    display: none;
 }
 /* thumbail */
 .thumbnail{
@@ -311,3 +372,77 @@ header a{
         font-size: 30px;
     }
 }
+
+/*cards*/
+.col{
+    margin-top: 0;
+    padding: 80px;
+    display: flex;
+
+}
+.col .card{
+    height: 200px;
+    width: 300px;
+    border: 2px solid dark brown;
+    transition: transform 0.3s ease-in-out;
+  
+}
+.col .card img{
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: red;
+}
+/*content pg3*/
+
+.separation{
+    background-color: grey;
+    height: 1px;
+  }
+  .feature{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 50px 12%;
+      font-size: 22px;
+  }
+  
+  .row{
+     
+     color: white;
+     display: flex;
+     width: 100%;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 50px 50px;
+  
+  }
+  .img-col{
+      flex-basis: 50%;
+      margin-bottom: 20px;
+   
+  }
+  .img-col img{
+      display: block;
+      margin: auto;
+      width: 90%;
+  
+  }
+  .feature h2{
+
+      font-size: 50px;
+      font-weight: bolder;
+      margin-bottom: 20px;
+  }
+  .text-col{
+     flex-basis: 50%;
+     margin-bottom: 20px;
+     color: black;
+     align-items: center;
+  
+  }
+  .text-col .text{
+      font-size: 22px;
+      margin: 10px;
+      color: black;
+  }

@@ -50,23 +50,9 @@ function showSlider(type){
     }, timeAutoNext)
 }
 
-
-// Get references to the button and form
-const button = document.getElementById('button');
-const myForm = document.getElementById('myForm');
-
-// Add an event listener to the button to handle the click
-button.addEventListener('click', function() {
-    // Toggle the visibility of the form
-    if (myForm.style.display === 'none' || myForm.style.display === '') {
-        myForm.style.display = 'block';  // Show the form
-    } else {
-        myForm.style.display = 'none';  // Hide the form
-    }
-});
-
 /*form*/
-document.getElementById('formbtn').addEventListener('click',function(){
+
+document.getElementById('openFormbtn').addEventListener('click',function(){
     document.getElementById('myform').style.display= 'block';
 });
 

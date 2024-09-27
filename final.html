@@ -1,310 +1,424 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="final.css">
-    <head>
-    </head>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project technobuzz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="finalproject.css">
 </head>
+
 <body>
-    <div class="header1">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <div class="main_box">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="newlogocrop.jpeg" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link ">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" style="width: 600px;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="mainbox">
+        <input type="checkbox" id="check" />
+        <div class="btn_one">
+          <label for="check" style="color: black">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+        <div class="sidebar_menu">
+          <div class="logo">
+            <a href="#">S&K TRAVELS</a>
+          </div>
+          <div class="btn_two">
+            <label for="check" style="color: black">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <i class="fa-solid fa-image"></i>
+                <a href="#">Gallery</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="#">Shortcuts</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li>
+                <i class="fa-solid fa-photo-film"></i>
+                <a href="#">Exhibits</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <li>
+                <i class="fa-solid fa-calendar-days"></i>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-store"></i>
+                <a href="#">Store</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-comments"></i>
+                <a href="#">Feedback</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </div>
+          <div class="social_media">
+            <ul>
+              <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    <!--form-->
+    <form id="myform" class="form-container">
+      <div  class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button  id="closeformbtn"  type="submit" class="btn btn-primary">Submit</button>
+    </form>
     <!-- carousel -->
     <div class="carousel">
-      
-        <!-- list item -->
-        <div class="list">
-            <div class="item">
-              <video class="video-slide" src="island vid.mp4" autoplay muted loop></video>
-                <div class="content">
-                    <div class="author">KANIKA & SALONI</div>
-                    <div class="title">TRAVEL</div>
-                    <div class="topic"> REFRESHING ISLANDS</div>
-                    <div class="des">
-                        The story of Attack on Titan centers on a civilization inside three circular walls. Its inhabitants, known as Eldians, have been led to believe that over one hundred years ago, humanity was driven to the brink of extinction after the emergence of humanoid giants called Titans.
-                    </div> 
-                    <div class="btn">
-                        <button class="seebtn" >SEE MORE</button>
-                      
-                        <button class="bookbtn" id="formbtn">BOOK NOW</button>
-                    </div>
-                </div>
-            </div>
+      <!-- list item -->
+      <div class="list">
+        <div class="item">
+          <video class="video-slide" src="island vid.mp4" autoplay muted loop></video>
+          <div class="content">
+            <div class="author">SALONI & KANIKA</div>
+            <div class="title">TRAVELS</div>
+            <div class="topic">REFRESHING ISLAND</div>
+            <div class="des">
+              If you’re planning to visit an island, this site is exclusively for you!! 
+                 
+              Islands are popular tourist attractions for their majestic views and great fun activities. The crystal-clear waters of the islands tempt visitors to dip in the sea and get close to rich-marine life.
 
-            <!--form-->
-           <div id="myform" class="form-container">
-            <form>
-              <h3>BOOK YOUR PLAN NOW</h2>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="btn">
+              <button class="seebtn">SEE MORE</button>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <input type="submit" value="submit">
-                <button type="button" id="closeformbtn">Close</button>
-            </form>
-           </div>
-
-              
-            <div class="item">
-                <video class="video-slide" src="beach.mp4" autoplay muted loop></video>
-                <div class="content">
-                    <div class="author">KANIKA & SALONI</div>
-                    <div class="title">TRAVEL</div>
-                    <div class="topic">BREEZY BEACHES</div>
-                    <div class="des">
-                        Tanjiro Kamado is a kind-hearted and intelligent boy who lives with his family in the mountains. After his father's death, he became his family's breadwinner and travels to the nearby village to sell charcoal. One day he comes back home and finds out that his entire family is murdered and his sister is the sole survivor. 
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <video class="video-slide" src="mountain.mp4" autoplay muted loop></video>
-                <div class="content">
-                    <div class="author">KANIKA & SALONI</div>
-                    <div class="title">TRAVEL</div>
-                    <div class="topic">MYSTIC MOUNTAINS</div>
-                    <div class="des">
-                        A powerful fox known as the Nine-Tails attacks Konoha, the hidden leaf village in the Land of Fire, one of the Five Great Shinobi Countries in the Ninja World. In response, the leader of Konoha and the Fourth Hokage, Minato Namikaze, at the cost of his life, seals the fox inside the body of his newborn son, Naruto Uzumaki, making him a host of the beast.
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <video class="video-slide" src="desert video.mp4" autoplay muted loop></video>
-                <div class="content">
-                    <div class="author">KANIKA & SALONI</div>
-                    <div class="title">TRAVEL</div>
-                    <div class="topic">ENDLESS DESERT</div>
-                    <div class="des">
-                        In Tokyo, a disaffected high school student named Light Yagami finds the "Death Note", a mysterious black notebook with rules that can end anyone's life in seconds as long as the writer knows both the target's true name and face.
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- list thumnail -->
-        <div class="thumbnail">
-            <div class="item">
-                <img src="island pic.jpg">
-                <div class="content">
-                    <div class="title">
-                        AOT
-                    </div>
-                    <div class="description">
-                        Read more....
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="beach pic.jpg">
-                <div class="content">
-                    <div class="title">
-                        DEMON SLAYER
-                    </div>
-                    <div class="description">
-                        Read more....
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="mountain pic.jpg">
-                <div class="content">
-                    <div class="title">
-                        NARUTO
-                    </div>
-                    <div class="description">
-                        Read more....
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="desert pic.jpg">
-                <div class="content">
-                    <div class="title">
-                        DEATH NOTE
-                    </div>
-                    <div class="description">
-                        Read more....
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- next prev -->
-
-        <div class="arrows">
-            <button id="prev">></button>
-            <button id="next">></button>
-        </div>
-        <!-- time running -->
-        <div class="time"></div>
-    </div>
-
-    <!--cards-->
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card ">
-            <img src="mountain pic.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button class="bookbtn" id="openFormbtn">BOOK NOW</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="beach pic.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="item">
+          <video class="video-slide" src="beach.mp4" autoplay muted loop></video>
+          <div class="content">
+            <div class="author">SALONI & KANIKA</div>
+            <div class="title">TRAVELS</div>
+            <div class="topic">BREEZY BEACHES</div>
+            <div class="des">
+              The sea, the sand, and the waves. The beach is a sacred sanctuary for humans and the oceans. Could you live without that occasional walk on the beach? Discover the most inspiring beach destinations of all time.
+            </div>
+            <div class="btn">
+              <button class="seebtn">SEE MORE</button>
+
+              <button class="bookbtn" id="formbtn">BOOK NOW</button>
             </div>
           </div>
         </div>
-        <div class="col">
-            <div class="card ">
-              <img src="beach pic.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
+        <div class="item">
+          <video class="video-slide" src="mountain.mp4" autoplay muted loop></video>
+          <div class="content">
+            <div class="author">SALONI & KANIKA</div>
+            <div class="title">TRAVELS</div>
+            <div class="topic">MYSTIC MOUNTAINS</div>
+            <div class="des">
+              A vacation is all about recharging, refreshing oneself and most importantly slowing down a bit. Now is the perfect time to get away from the hustle and bustle. A time to turn of the television, step away from the laptop, and just sit on the porch with a cup of coffee and watch the morning mist burn away. Sound relaxing? Believe us, it is, and we have loads of great vacation rentals that are perfect for your next family vacation. 
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="beach pic.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
             </div>
-          </div>
-        <div class="col">
-          <div class="card">
-            <img src="desert pic.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <div class="btn">
+              <button class="seebtn">SEE MORE</button>
+
+              <button class="bookbtn" id="formbtn">BOOK NOW</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="island pic.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="item">
+          <video class="video-slide" src="desert video.mp4" autoplay muted loop></video>
+          <div class="content">
+            <div class="author">SALONI & KANIKA</div>
+            <div class="title">TRAVELS</div>
+            <div class="topic">ENDLESS DESERT</div>
+            <div class="des">
+              Vast, echoing, and divinity-like. This is how Lawrence of Arabia described Wadi Rum, the most beautiful and extensive desert in Jordan. Like this, there are many others, which are unique, uncontaminated and timeless. They are becoming wellness destinations to disconnect from the routine and allow people to find themselves.
+                        Although a trip in the desert may not be the first thing that comes to mind when you think of nature, the desert is one of the most fascinating places on earth. With the dry climate, free of trees or wild waters, deserts cover one fifth of the planet and perhaps it is precisely under the extreme conditions to which plants and animals are subjected that this landscape owes its charm.
+            </div>
+            <div class="btn">
+              <button class="seebtn">SEE MORE</button>
+
+              <button class="bookbtn" id="formbtn">BOOK NOW</button>
             </div>
           </div>
         </div>
       </div>
-
-      <!--content pg 3-->
-      <div class="feature"></div>
-        <div class="row">
-            <div class="text-col">
-                <h2>Enjoy on your TV.</h2>
-                <div class="text">
-                    Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more
-                </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="beach pic.jpg">
+          <div class="content">
+            <div class="title">
+              BEACHES
             </div>
-            <div class="img-col">
-                <img src="mountain pic.jpg" alt="" />
+            <div class="description">
+              Read more....
             </div>
+          </div>
         </div>
-        <section class="separation"></section>
-
-        <div class="row">
-            <div class="img-col">
-                <img src="beach pic.jpg" alt="" />
+        <div class="item">
+          <img src="mountain pic.jpg">
+          <div class="content">
+            <div class="title">
+              MOUNTAINS
             </div>
-            <div class="text-col">
-                <h2>Download your shows to watch offline</h2>
-                <div class="text">Save your favourites easily and always have something to watch.</div>
+            <div class="description">
+              Read more....
             </div>
+          </div>
         </div>
-        <section class="separation"></section>
-
-        <div class="row">
-            <div class="text-col">
-                <h2>Watch everywhere</h2>
-                <div class="text">Stream unlimited movies and TV shows on your phone, tablet, laptop,
-                    and TV.</div>
+        <div class="item">
+          <img src="desert pic.jpg">
+          <div class="content">
+            <div class="title">
+              DESERT
             </div>
-            <div class="img-col">
-                <img src="desert pic.jpg" alt="" />
+            <div class="description">
+              Read more....
             </div>
+          </div>
         </div>
-        <section class="separation"></section>
-
-        <div class="row">
-            <div class="img-col">
-                <img src="island pic.jpg" alt="" />
+        <div class="item">
+          <img src="island pic.jpg">
+          <div class="content">
+            <div class="title">
+              ISLAND
             </div>
-            <div class="text-col">
-                <h2>Create profiles for kids</h2>
-                <div class="text">
-                    Send children on adventures with their favourite characters in a
-                    space made just for them—free with your membership.
-                </div>
+            <div class="description">
+              Read more....
             </div>
+          </div>
         </div>
-        
+      </div>
+      <!-- next prev -->
+
+      <div class="arrows">
+        <button id="prev">></button>
+        <button id="next">></button>
+      </div>
+      <!-- time running -->
+      <div class="time"></div>
     </div>
-    <section class="separation"></section>
-    
+  </div>
 
-    <script src="final.js"></script>
+  <!--card-->
+  <div class="card" style="width: 14rem;">
+    <img src="map2.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <a href="#" class="btn btn-primary">SEARCH ON MAP</a>
+    </div>
+  </div>
+
+
+  <!--content pg 3-->
+
+  <div class="row">
+    <div class="rowfirst">
+      <h3 style="color:blue">How it works!</h3>
+      <h2 style="color: black;">The more you book,the higher you go</h2>
+      <img src="Screenshot 2024-09-26 235751.png">
+
+      <div class="text">We were born to travel,
+        we live to share</div>
+    </div>
+  </div>
+  <section class="separation"></section>
+
+  <div class="row">
+    <div class="h2logo">
+      <h2 style="color: black;">Why book with</h2>
+      <img src="newlogocrop.jpeg">
+    </div>
+
+    <img src="Screenshot 2024-09-27 001045.png">
+  </div>
+  <section class="separation"></section>
+
+  <!--faq-->
+  <div class="faq">
+    <h2>
+      Frequently Asked Questions</h2>
+    </h2>
+    <ul class="accordian">
+      <li>
+        <input type="radio" name="accordian" id="first">
+        <label for="first">What is Netflix?</label>
+        <div class="content">
+          <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+            anime, documentaries and more on thousands of internet-connected devices.
+            You can watch as much as you want, whenever you want, without a single ad – all for one low
+            monthly price. There's always something new to discover, and new TV shows and movies are added
+            every week!</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordian" id="second">
+        <label for="second">What is Netflix Cost?</label>
+        <div class="content">
+          <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+            fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordian" id="third">
+        <label for="third">Where can I Watch?</label>
+        <div class="content">
+          <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+            netflix.com from your personal computer or on any internet-connected device that offers the
+            Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+            consoles.
+
+            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use
+            downloads to watch while you're on the go and without an internet connection. Take Netflix with
+            you anywhere.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordian" id="fourth">
+        <label for="fourth">How do I cancel?</label>
+        <div class="content">
+          <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel
+            your account online in two clicks. There are no cancellation fees – start or stop your account
+            anytime.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordian" id="fifth">
+        <label for="fifth">What can I watch Netflix?</label>
+        <div class="content">
+          <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+            Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordian" id="sixth">
+        <label for="sixth">Is Netflix good for Kids?</label>
+        <div class="content">
+          <p>The Netflix Kids experience is included in your membership to give parents control while kids
+            enjoy family-friendly TV shows and films in their own space.
+
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+            rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-2">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Section -->
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>
+            We are a dedicated travel platform offering the best deals for exploring the world.
+            Our mission is to make every journey memorable by providing exceptional experiences.
+          </p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Destinations</a></li>
+            <li><a href="#" class="text-white">Special Offers</a></li>
+            <li><a href="#" class="text-white">Contact Us</a></li>
+            <li><a href="#" class="text-white">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div id="Contacts" class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-envelope"></i> info@travelbuzz.com</li>
+            <li><i class="fa fa-phone"></i> +123 456 7890</li>
+            <li><i class="fa fa-map-marker"></i> 123 Travel Street, Wanderlust City</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="row mt-3">
+        <div class="col text-center">
+          <a href="#" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" </div>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+            <script src="finalproject.js"></script>
+
+
+
 </body>
+
 </html>
